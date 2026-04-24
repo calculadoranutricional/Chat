@@ -1,11 +1,20 @@
-<div align="center">
+# Gemini Chat Pro - Frosted Glass Edition
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Chat de IA fluido y minimalista impulsado por **Google Gemini** y **Firebase**.
 
-  <h1>Built with AI Studio</h2>
+## Características
+- 🚀 **Autenticación con Google**: Sin contraseñas, usa tu cuenta de Google directamente.
+- ❄️ **Diseño Frosted Glass**: Interfaz moderna y elegante con efectos de desenfocado.
+- 🧠 **Gemini 3 Flash**: Respuestas rápidas e inteligentes.
+- ☁️ **Persistencia en la Nube**: Tus chats se guardan de forma segura en Firestore.
+- ⚡ **CI/CD Ready**: Configurado para GitHub Actions.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Configuración Local
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. Clona el repositorio.
+2. Instala dependencias: `npm install`.
+3. Crea un archivo `.env` basado en `.env.example` y agrega tu `GEMINI_API_KEY`.
+4. Ejecuta en desarrollo: `npm run dev`.
 
-</div>
+## Despliegue en GitHub Actions
+Asegúrate de agregar `GEMINI_API_KEY` en los secretos de tu repositorio de GitHub para que la compilación pase correctamente.

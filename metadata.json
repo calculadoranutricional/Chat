@@ -1,0 +1,6 @@
+{
+  "name": "Gemini Chat Pro",
+  "description": "Una aplicación de chat fluida y segura impulsada por Google Gemini, con autenticación de Google y almacenamiento persistente en la nube.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
