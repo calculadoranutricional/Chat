@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-dark-bg: #0a0a0a;
+  --color-dark-surface: #0f0f0f;
+  --color-dark-input: #161616;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-slate-200 antialiased selection:bg-indigo-500/30;
+  }
+}
+
+.chat-container {
+  height: calc(100dvh - 12rem);
+}
+
+@media (max-width: 640px) {
+  .chat-container {
+    height: calc(100dvh - 14rem);
+  }
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

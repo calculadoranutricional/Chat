@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Message": {
+      "title": "Chat Message",
+      "description": "A single message in a chat history.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The UID of the user who owns this message." },
+        "role": { "type": "string", "enum": ["user", "model"], "description": "The sender's role." },
+        "text": { "type": "string", "description": "The message content." },
+        "timestamp": { "type": "number", "description": "Creation timestamp." }
+      },
+      "required": ["userId", "role", "text", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/messages/{messageId}": {
+      "schema": "Message",
+      "description": "Collection of all chat messages."
+    }
+  }
+}

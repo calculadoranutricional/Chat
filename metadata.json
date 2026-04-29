@@ -1,0 +1,6 @@
+{
+  "name": "Gemini Chat Authenticated",
+  "description": "Una aplicación de chat segura con Google Sign-In y Gemini API, optimizada para móviles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
